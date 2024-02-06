@@ -1,0 +1,119 @@
+.Projects_head {
+    margin-top:25px;
+    color: white;
+    text-align: center;
+}
+
+.project_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.project_content .project_title {
+    font-weight: var(--semibold);
+    font-size: 2em;
+    margin: 1rem; 
+    line-height: 30px;
+}
+
+.project_item {
+    border: 2px solid rgb(45, 44, 44);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+    border-radius: 7px;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    margin-left: 7px;
+}
+
+
+.project_content img {
+    border-radius:5px ;
+    box-shadow: 5px black;
+    max-width: 80%;
+    height:100%;
+    height: auto;
+}
+.languages{
+    color: #fff; 
+
+}
+.project_content .code,
+.project_content .view {
+    padding: 0.5rem 1.5rem; 
+    margin-left: 5px;
+    font-size: 1rem; 
+    background-color: #333;
+    border-radius: 5px;
+    color: #fff; 
+    cursor: pointer; 
+}
+.project_content .code:hover,
+.project_content .view:hover {
+    background-color: #070606;
+    color: #fff; 
+    cursor: pointer; 
+}
+
+
+.show_more_btn {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    grid-column: span 4;
+}
+.show_more_btn:hover {
+    border: 2px solid black;
+    background-color: rgb(40, 38, 38);
+    color:white;
+}
+
+@media (max-width: 1400px) {
+    .project_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1200px) {
+    .project_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 950px) {
+    .project_item {
+        width:80%;
+        margin: auto;
+    }
+    .project_content img {
+        border-radius:5px ;
+        box-shadow: 5px black;
+        max-width: 70%;
+        height:70%;
+        height: auto;
+    }
+    .project_container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 750px) {
+    .project_item {
+        width:80%;
+        height: 80%;
+        margin: auto;
+    }
+    .project_content img {
+        border-radius:5px ;
+        box-shadow: 5px black;
+        max-width: 70%;
+        height:60%;
+        height: auto;
+    }
+    .project_container {
+        display: flex;
+        flex-direction: column;
+    }
+}

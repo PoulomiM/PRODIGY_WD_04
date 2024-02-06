@@ -1,0 +1,104 @@
+.MySkills .MySkills_head {
+    color: white;
+    margin-top: 3rem;
+    line-height: 1.5rem;
+    font-weight: var(--medium);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.skills_container {
+    padding-left: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+}
+
+.skills_name {
+    font-weight: var(--medium);
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 2px;
+}
+
+.skills_number {
+    color: white;
+    display: inline-block;
+}
+
+.skills_list {
+    margin-bottom: 3rem;
+    row-gap: 1.8rem;
+}
+
+.skills_title {
+    border-bottom: 2px solid rgb(234, 222, 222);
+    color: white;
+    font-weight: var(--semibold);
+    font-size: 25px;
+    margin-bottom: 1.5rem;
+    justify-content: space-around;
+    line-height: 50px;
+    width: 50%;
+}
+
+.skills_bar,
+.skills_percentage {
+    color: white;
+    height: 5px;
+    border-radius: 0.25rem;
+}
+
+.skills_bar {
+    width: 82%;
+    background-color: var(--bg-color-variant);
+    margin-bottom: 20px;
+}
+
+.skills_percentage {
+    display: block;
+    background-color: rgb(166, 119, 214);
+}
+
+@media (max-width: 750px) {
+    .skills_container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills_title {
+        width: 50%;
+    }
+    .skills_container {
+       line-height: 15px;
+    }
+    .skills_bar {
+        margin-top: 7px;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 950px) {
+    .skills_title {
+        width: 60%;
+    }
+}
+
+@media (min-width: 951px) and (max-width: 1200px) {
+    .skills_title {
+        width: 70%;
+    }
+    .skills_container {
+        line-height: 15px;
+     }
+     .skills_bar {
+         margin-top: 7px;
+     }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .skills_title {
+        width: 80%;
+    }
+}
